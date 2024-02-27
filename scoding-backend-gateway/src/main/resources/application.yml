@@ -18,7 +18,7 @@ spring:
           predicates:
             - Path=/api/judge/**
   application:
-    name: yuoj-backend-gateway
+    name: scoding-backend-gateway
   main:
     web-application-type: reactive
 server:

@@ -7,16 +7,16 @@ spring:
         server-addr: nacos:8848
     gateway:
       routes:
-        - id: yuoj-backend-user-service
-          uri: lb://yuoj-backend-user-service
+        - id: scoding-backend-user-service
+          uri: lb://scoding-backend-user-service
           predicates:
             - Path=/api/user/**
-        - id: yuoj-backend-question-service
-          uri: lb://yuoj-backend-question-service
+        - id: scoding-backend-question-service
+          uri: lb://scoding-backend-question-service
           predicates:
             - Path=/api/question/**
-        - id: yuoj-backend-judge-service
-          uri: lb://yuoj-backend-judge-service
+        - id: scoding-backend-judge-service
+          uri: lb://scoding-backend-judge-service
           predicates:
             - Path=/api/judge/**
   application:
